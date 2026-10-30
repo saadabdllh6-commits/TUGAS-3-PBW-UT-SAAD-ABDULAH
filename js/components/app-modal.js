@@ -1,0 +1,1 @@
+Vue.component('app-modal',{props:{show:Boolean,title:String},template:`<div v-if="show" class="modal-backdrop" @click.self="$emit('close')"><section class="modal"><h3>{{title}}</h3><slot></slot><div class="modal-actions"><button class="btn light" @click="$emit('close')">Batal</button><button class="btn danger-btn" @click="$emit('confirm')">Hapus</button></div></section></div>`});
